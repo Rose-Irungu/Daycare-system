@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+<div class="container">
+  <div class="card" style="background-color: #007bff; border-radius: 15px; color: white; margin-top: 80px;">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card-body">
+          <h2 class="card-title text-center" style="font-size: 2rem;">Healthy Habits Start Here</h2>
+          <p class="card-text">
+            Looking for “the best daycare centers near me” in Nairobi? Look no further than Little Dreamers!
+            Our modern daycare centers in Nairobi offer the perfect environment for little kids to learn, grow, and thrive.
+          </p>
+          <p class="card-text">
+            We firmly believe that nourishing meals are key to children’s development. Therefore, we take immense pride in providing healthful, delightful meals that are as varied as they are nutritious.
+          </p>
+          <p class="card-text">
+            Our Little Dreamer menu, a brainchild of our skilled in-house chef and licensed nutritionist, is a fascinating medley of taste and nutrition. It constantly evolves, offering a rainbow of fresh, local ingredients and introducing our scholars to an exciting range of flavors and foods.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'images/accomplishment-3.jpg.webp' %}" class="card-img-top" alt="Daycare Image" style="border-radius: 15px;">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section>
+<div class="container" style="margin-top: 45px; margin-bottom: 40px;">
+  <div class="card" style="background-color: #007bff; border-radius: 15px; color: white;">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card-body">
+          <h2 class="card-title text-center" style="font-size: 2rem;">Healthy Habits Start Here</h2>
+          <p class="card-text">
+            Looking for “the best daycare centers near me” in Nairobi, KENYA? Look no further than Little Scholars!
+            Our modern daycare centers in westlands offer the perfect environment for little kids to learn, grow, and thrive.
+          </p>
+          <p class="card-text">
+            We firmly believe that nourishing meals are key to children’s development. Therefore, we take immense pride in providing healthful, delightful meals that are as varied as they are nutritious.
+          </p>
+          <p class="card-text">
+            Our Little Scholars menu, a brainchild of our skilled in-house chef and licensed nutritionist, is a fascinating medley of taste and nutrition. It constantly evolves, offering a rainbow of fresh, local ingredients and introducing our scholars to an exciting range of flavors and foods.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'images/maxresdefault-5.jpg.webp' %}" class="card-img-top" alt="Daycare Image" style="border-radius: 15px;">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="container">
+  <h2 class="text-center" style="font-size: 2rem; color: #005a87; padding-bottom: 15px;">Our Menu</h2>
+  <p style="text-align: center; font-size: 1.2rem; color: #333;">At Little Dreamers, we provide nutritious and balanced meals for your little one, made with fresh ingredients to support their growth and energy throughout the day.</p>
+
+  <div class="row">
+    <!-- Card for Monday -->
+    <div class="col-md-3">
+      <div class="card" style="background-color: #ffebcd; border-radius: 15px;">
+        <div class="card-body">
+          <h4 class="card-title text-center" style="color: #333;">Monday</h4>
+          <ul>
+            <li>Breakfast: Oatmeal with fruit</li>
+            <li>Lunch: Chicken & rice with vegetables</li>
+            <li>Snack: Apple slices and cheese</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card for Tuesday -->
+    <div class="col-md-3">
+      <div class="card" style="background-color: #f5f5f5; border-radius: 15px;">
+        <div class="card-body">
+          <h4 class="card-title text-center" style="color: #333;">Tuesday</h4>
+          <ul>
+            <li>Breakfast: Whole grain toast with scrambled eggs</li>
+            <li>Lunch: Spaghetti with tomato sauce and salad</li>
+            <li>Snack: Yogurt with honey and granola</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card for Wednesday -->
+    <div class="col-md-3">
+      <div class="card" style="background-color: #f0f8ff; border-radius: 15px;">
+        <div class="card-body">
+          <h4 class="card-title text-center" style="color: #333;">Wednesday</h4>
+          <ul>
+            <li>Breakfast: Pancakes with maple syrup</li>
+            <li>Lunch: Turkey sandwich with cucumber</li>
+            <li>Snack: Carrot sticks with hummus</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card for Thursday -->
+    <div class="col-md-3" style="height: 200px;">
+      <div class="card" style="background-color: #e0ffff; border-radius: 15px;">
+        <div class="card-body">
+          <h4 class="card-title text-center" style="color: #333;">Thursday</h4>
+          <ul>
+            <li>Breakfast: Scrambled eggs with toast</li>
+            <li>Lunch: Fish sticks with mashed potatoes</li>
+            <li>Snack: Banana and crackers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card for Friday -->
+    <div class="col-md-3" style="margin-top: 40px; margin-bottom: 40px;">
+      <div class="card" style="background-color: #f5deb3; border-radius: 15px;">
+        <div class="card-body">
+          <h4 class="card-title text-center" style="color: #333;">Friday</h4>
+          <ul>
+            <li>Breakfast: Yogurt with granola and berries</li>
+            <li>Lunch: Veggie stir-fry with tofu</li>
+            <li>Snack: Pretzels and fruit</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

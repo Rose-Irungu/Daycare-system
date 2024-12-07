@@ -1,0 +1,528 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Hero Section with Carousel -->
+<section class="hero bg-light py-5 text-center">
+  <div class="container">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner" style="margin-top: 55px;">
+        <!-- First Slide -->
+        <div class="carousel-item active">
+          <img src="{% static 'images/day-care-center-.jpg' %}" class="d-block w-100" alt="Kids playing on playground">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-4 text-primary">Welcome to Our Baby Daycare</h1>
+            <p class="lead">Providing the best care and nurturing environment for your child.</p>
+            <a href="{% url 'services' %}" class="btn btn-primary btn-lg">Explore Our Services</a>
+          </div>
+        </div>
+
+        <!-- Second Slide -->
+        <div class="carousel-item">
+          <img src="{% static 'images/playground-slides.jpg' %}" class="d-block w-100" alt="Kids playing on swings">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-4 text-primary">A Fun & Safe Place for Your Child</h1>
+            <p class="lead">Let your child learn, play, and grow in a secure and engaging environment.</p>
+            <a href="{% url 'services' %}" class="btn btn-primary btn-lg">Explore Our Services</a>
+          </div>
+        </div>
+
+        <!-- Third Slide -->
+        <div class="carousel-item">
+          <img src="{% static 'images/kid-running.jpg' %}" class="d-block w-100" alt="Kids on a playground slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-4 text-primary">Your Child’s Happiness is Our Priority</h1>
+            <p class="lead">We provide a warm and welcoming space where your child can flourish.</p>
+            <a href="{% url 'services' %}" class="btn btn-primary btn-lg">Explore Our Services</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Apply custom max-width and max-height for carousel */
+  .carousel {
+    max-width: 1200px; /* Adjust this to your desired width */
+    margin: 0 auto; /* Center the carousel */
+  }
+
+  /* Ensure carousel images fit within the container */
+  .carousel-inner img {
+    object-fit: cover; /* Prevent images from stretching */
+    max-height: 500px; /* Adjust this to control the height */
+    border-radius: 20px;
+  }
+
+  /* Adjust carousel caption positioning */
+  .carousel-caption {
+    bottom: 20px; /* Adjust this to your preferred caption position */
+  }
+
+  .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+</style>
+<div class="container mt-5">
+  <div class="card rounded shadow-lg" style="background-color: #f09bd6; border: none;">
+    <div class="card-body">
+      <div class="text-section">
+        <h1 class="text-center" style="font-size: 2rem; color: #4A90E2;"><strong>Your Child’s First Step to a Lifelong Adventure</strong></h1>
+        <p class="text-center" style="font-size: 1.1rem; line-height: 1.8; color: #555;">Welcome to Little Dreamers Daycare, where learning meets fun! Here, your child will immerse themselves in a dynamic world filled with playful learning, soulful music, and creative arts and crafts, all within a nurturing space that fosters friendship and independence. Experience a joyous and enriching start to your child’s learning journey with us!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="why-different py-5 bg-light">
+  <div class="container">
+    <h1 class="text-center text-primary">The Little Dreamers Difference</h1>
+    <p class="text-center text-muted mt-3">
+      At Little Dreamers Daycare, we believe in creating a supportive and enriching environment that focuses on the unique needs of each child. Here’s why our daycare stands out.
+    </p>
+    <div class="row mt-5">
+      <!-- Parent Partnership -->
+      <div class="col-md-4 text-center" style="background-color: #0dcaf0">
+        <div class="service-box p-4 border rounded shadow-sm" style="background-color: #4e9c87; ">
+          <i class="fas fa-users text-primary fs-1 mb-3"></i>
+          <h4>Parent Partnership & Updates</h4>
+          <p>We believe in the power of communication. Parents are kept up-to-date with their child's progress and activities, ensuring a strong partnership between home and daycare.</p>
+        </div>
+      </div>
+      <!-- Family of Compassionate Educators -->
+      <div class="col-md-4 text-center" style="background-color: #0dcaf0">
+        <div class="service-box p-4 border rounded shadow-sm">
+          <i class="fas fa-chalkboard-teacher text-primary fs-1 mb-3"></i>
+          <h4>Family of Compassionate Educators</h4>
+          <p>Our educators are passionate about nurturing and inspiring children. They form a family-oriented, supportive team dedicated to providing the best care and education.</p>
+        </div>
+      </div>
+      <!-- Nutritious Menu -->
+      <div class="col-md-4 text-center" style="background-color: #0dcaf0">
+        <div class="service-box p-4 border rounded shadow-sm" style="background-color:  #dbbfec;">
+          <i class="fas fa-apple-alt text-primary fs-1 mb-3"></i>
+          <h4>Nutritious Menu</h4>
+          <p>We provide healthy, balanced meals to ensure your child’s growth and development. Our menu is carefully planned with fresh ingredients to nourish both body and mind.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <!-- Embracing Early Learning -->
+      <div class="col-md-4 text-center">
+        <div class="service-box p-4 border rounded shadow-sm" style="background-color: #f09bc2;">
+          <i class="fas fa-book-reader text-primary fs-1 mb-3"></i>
+          <h4>Embracing Early Learning</h4>
+          <p>Our curriculum emphasizes interactive and creative activities designed to spark curiosity and foster early cognitive, social, and emotional development.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="infant-care" class="py-5">
+  <div class="container">
+    <h1 class="text-center text-success">Infant Care (3-12 Months)</h1>
+
+    <!-- Bootstrap Grid for Layout -->
+    <div class="row align-items-center">
+      <!-- Text Column with Card -->
+      <div class="col-md-6 text-md-start text-center">
+        <div class="card shadow-sm" style="height: 400px; background-color: #f0f8ff;"> <!-- Change color here -->
+          <div class="card-body">
+            <p class="card-text" style="font-size: 1.25rem; line-height: 1.6";>
+              At Little Dreamers, our infant daycare program <strong>(ages 3 months-1 years old)</strong>
+                focuses on sensory stimulation and caring interactions. In our safe and nurturing centers,
+                your children will grow emotionally, socially, and cognitively each day. With small groups and all-inclusive care,
+                your babies receive meaningful care.
+                <br>
+                <br>
+                <a href="{% url 'infant' %}">Learn more</a> about our infant daycare program in Nairobi, KENYA.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-md-6 text-center mt-4 mt-md-0" style="padding-top: 50px">
+        <img src="{% static 'images/nursery.jpg.webp' %}" alt="Infant Care" class="img-fluid rounded" style="max-width: 500px; height: 400px; object-fit: cover;">
+        <div class="mt-3">
+          <a href="{% url 'infant' %}" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="toddler-care" class="py-5">
+  <div class="container">
+    <h1 class="text-center text-success">Toddler Care (1-3 Years)</h1>
+
+    <div class="row align-items-center">
+      <!-- Text Column with Card -->
+      <div class="col-md-6 text-md-start text-center">
+        <div class="card shadow-sm" style="height: 400px; background-color: #fffacd;"> <!-- Change color here -->
+          <div class="card-body">
+            <p class="card-text" style="font-size: 1.25rem; line-height: 1.6;">
+              Our Toddler Care program is designed for children aged 1-3 years old. This is a time of tremendous growth and development.
+              Through play, exploration, and structured activities, toddlers begin to develop their independence and communication skills.
+              Our educators support these milestones by providing a stimulating environment for your toddler to learn and grow.
+              <br><br>
+              <a href="{% url 'toddler' %}">Learn more</a> about our toddler daycare program.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-md-6 text-center mt-4 mt-md-0" style="padding-top: 50px">
+        <img src="{% static 'images/toddlers.jpg.webp' %}" alt="Toddler Care" class="img-fluid rounded" style="max-width: 500px; height: 400px; object-fit: cover;">
+        <div class="mt-3">
+          <a href="{% url 'toddler' %}" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="preschool-program" class="py-5">
+  <div class="container">
+    <h1 class="text-center text-success">Preschool Program (3-5 Years)</h1>
+
+    <div class="row align-items-center">
+      <!-- Text Column with Card -->
+      <div class="col-md-6 text-md-start text-center">
+        <div class="card shadow-sm" style="height: 400px; background-color: #fafad2;">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 1.25rem; line-height: 1.6;">
+              Our Preschool Program focuses on preparing children for school by developing their cognitive, emotional, and social skills.
+              Children aged 3-5 years will engage in activities that promote early literacy, numeracy, creativity, and problem-solving.
+              Through interactive learning, they will develop a love for learning, which will serve them well in school and beyond.
+              <br><br>
+              <a href="#">Learn more</a> about our preschool program.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-md-6 text-center mt-4 mt-md-0" style="padding-top: 50px">
+        <img src="{% static 'images/older-toddlers.jpg.webp' %}" alt="Preschool Program" class="img-fluid rounded" style="max-width: 500px; height: 400px; object-fit: cover;">
+        <div class="mt-3">
+          <a href="{% url 'preschool' %}" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="extended-daycare" class="py-5">
+  <div class="container">
+    <h1 class="text-center text-success">Extended Daycare Program(3 - 5 years)</h1>
+
+    <div class="row align-items-center">
+      <!-- Text Column with Card -->
+      <div class="col-md-6 text-md-start text-center">
+        <div class="card shadow-sm" style="height: 400px; background-color: #e0ffff;"> <!-- Background color for this section -->
+          <div class="card-body">
+            <p class="card-text" style="font-size: 1.25rem; line-height: 1.6;">
+              Our Extended Daycare Program provides additional care for children outside of regular daycare hours.
+              This program is ideal for busy parents who need flexible childcare options. We provide a safe and enriching environment
+              for children after regular school or daycare hours, with various activities focused on fun learning and social development.
+              <br><br>
+              <a href="#">Learn more</a> about our Extended Daycare Program.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-md-6 text-center mt-4 mt-md-0" style="padding-top: 50px">
+        <img src="{% static 'images/after-school.jpg.webp' %}" alt="Extended Daycare" class="img-fluid rounded" style="max-width: 500px; height: 400px; object-fit: cover;">
+        <div class="mt-3">
+          <a href="{% url 'extended' %}" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="benefits" class="py-5">
+  <div class="container">
+    <h1 class="text-center text-success">Benefits for Kids</h1>
+
+    <div class="row">
+      <!-- Vision of Growth Card -->
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4" style="background-color: #f0f8ff;">
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              <i class="fas fa-seedling"></i> Vision of Growth
+            </h5>
+            <p class="card-text">
+              Our program encourages children to grow and develop at their own pace, fostering a love for learning and exploring. We aim to provide them with the foundation to build confidence and curiosity.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aiming High Card -->
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4" style="background-color: #e0ffff;">
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              <i class="fas fa-bullseye"></i> Aiming High
+            </h5>
+            <p class="card-text">
+              We nurture children’s potential by helping them set goals and work towards achieving them. Through structured activities and encouragement, children learn the value of perseverance and ambition.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Care and Community Card -->
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4" style="background-color: #fffacd;">
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              <i class="fas fa-users"></i> Care & Community
+            </h5>
+            <p class="card-text">
+              We emphasize the importance of care, kindness, and being part of a community. Our program teaches children to respect others, work as a team, and grow in a supportive environment that fosters empathy and collaboration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="py-5 bg-light">
+  <div class="container">
+    <h1 class="text-center text-success mb-4">What Parents Are Saying</h1>
+
+    <div class="row">
+      <!-- Review 1 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <p class="card-text">"Little Dreamers has been a game-changer for our child. The staff is caring, and the environment is perfect for growth. Our baby loves every moment here!"</p>
+            <footer class="blockquote-footer text-center">
+              <div class="d-flex justify-content-center">
+                <!-- Stars for Review -->
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star-half-alt text-warning"></i> <!-- Half star -->
+              </div>
+              Jane Doe, Parent
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <p class="card-text">"We’ve seen incredible development in our toddler’s skills, and we’re so happy with the personalized care they receive at Little Dreamers. Highly recommend!"</p>
+            <footer class="blockquote-footer text-center">
+              <div class="d-flex justify-content-center">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star-half-alt text-warning"></i>
+                <i class="fa fa-star-o text-warning"></i> <!-- Empty star -->
+              </div>
+              John Smith, Parent
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <p class="card-text">"The nurturing environment at Little Dreamers has exceeded our expectations. We feel confident leaving our little one in their care every day."</p>
+            <footer class="blockquote-footer text-center">
+              <div class="d-flex justify-content-center">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+              </div>
+              Emily Davis, Parent
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-5 bg-light">
+  <div class="container">
+    <h1 class="text-center text-success mb-4">Frequently Asked Questions</h1>
+
+    <div class="accordion" id="faqAccordion">
+      <!-- FAQ 1 -->
+      <div class="card">
+        <div class="card-header" id="faqHeading1">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-success" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+              What is the age group for your infant care program?
+            </button>
+          </h5>
+        </div>
+
+        <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+          <div class="card-body">
+            Our infant care program is designed for children between 3 months and 1 year old, focusing on early development through sensory activities and nurturing interactions.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+    <div class="card">
+        <div class="card-header" id="faqHeading1">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-success" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+               What is the toddler care program like?
+            </button>
+          </h5>
+        </div>
+
+        <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+          <div class="card-body">
+            Our toddler program is aimed at children between 1 and 3 years old. We focus on both social and cognitive development through guided play and educational activities in a safe and engaging environment.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="card">
+        <div class="card-header" id="faqHeading1">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-success" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+              Do you provide meals in the daycare programs?
+            </button>
+          </h5>
+        </div>
+
+        <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+          <div class="card-body">
+            Yes, we provide nutritious meals for all children in our care. The meals are designed to meet the dietary needs of children at different stages of development.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="card">
+        <div class="card-header" id="faqHeading1">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-success" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+              How do you ensure the safety of children?
+            </button>
+          </h5>
+        </div>
+
+        <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+          <div class="card-body">
+            We prioritize the safety of each child with strict security measures, including childproofing, secure access points, and trained staff. We also maintain a low staff-to-child ratio to ensure proper supervision.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+    <div class="card">
+        <div class="card-header" id="faqHeading1">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-success" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+               What are the operating hours of the daycare?
+            </button>
+          </h5>
+        </div>
+
+        <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+          <div class="card-body">
+            Our daycare is open from Monday to Friday, 7:00 AM to 6:00 PM, with extended care options available.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="babysitters bg-light py-5">
+  <div class="container">
+    <h2 class="text-center">Meet Our Babysitters</h2>
+    <p class="text-center mt-3">Our dedicated team of professional babysitters ensures that your child receives the best care and attention.</p>
+    <div class="row mt-4">
+      <!-- Babysitter 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'images/avataaars.png' %}" class="card-img-top" alt="Babysitter 1">
+          <div class="card-body">
+            <h5 class="card-title">Sarah </h5>
+            <p class="card-text">Experienced in child care for over 5 years, Sarah provides a caring and playful environment for children of all ages.</p>
+            <a href="{% url 'babysitters' %}" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Babysitter 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'images/avataaars (1).png' %}" class="card-img-top" alt="Babysitter 2">
+          <div class="card-body">
+            <h5 class="card-title">Emily</h5>
+            <p class="card-text">Emily is a certified babysitter who specializes in creating educational games and activities for kids.</p>
+            <a href="{% url 'babysitters' %}" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Babysitter 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'images/avataaars (2).png' %}" class="card-img-top" alt="Babysitter 3">
+          <div class="card-body">
+            <h5 class="card-title">James</h5>
+            <p class="card-text">With a background in early childhood education, James is passionate about teaching while having fun with the kids.</p>
+            <a href="{% url 'babysitters' %}" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Contact Section -->
+<section class="contact bg-light py-5">
+  <div class="container text-center">
+    <h2>Contact Us</h2>
+    <p>Have questions or need more information? Reach out to us!</p>
+    <a href="{% url 'contact' %}" class="btn btn-primary">Contact Us</a>
+  </div>
+</section>
+{% endblock %}

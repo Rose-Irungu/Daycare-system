@@ -1,0 +1,487 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<section id="infant-program" class="py-5">
+  <div class="card p-4" style="background-color: #f0f8ff; border-radius: 25px; margin-top: 50px; margin-left: 45px; margin-right: 45px;">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="mb-4">Preschool (2-6 y.o.) Curriculum</h1>
+          <h2>Nurturing Lifelong Learners</h2>
+        <p>For our 2-6-year-olds, we’ve adopted the Frog Street Curriculum, a bilingual approach spanning 10 learning areas. This curriculum:</p>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                 Provides a <strong>language-rich setting</strong> with captivating books, songs, and tasks
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+             Engages and educates.Fosters <strong>linguistic, physical, and cognitive growth</strong>
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+            Acts as the  <strong>bedrock for all subjects</strong>
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Offers <strong>tailored content for children with learning challenges,</strong>
+              ensuring a diverse and inclusive educational atmosphere
+          </li>
+        </ul>
+        <button class="btn btn-primary mt-3" onclick="window.location.href='{% url 'enrollment' %}'">
+    Apply to Program
+</button>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'images/older-toddlers.jpg.webp' %}" alt="Infant Program" class="img-fluid rounded">
+      </div>
+      <div class="mt-4 p-3" style="background-color: #e6f7ff; border-radius: 10px;">
+      <h4>Enrollment Period</h4>
+      <p style="font-weight: bolder; color: orange;">Always open for enrollment.</p>
+      <h4 style="text-align: end;">Duration of the Academic Year:</h4>
+      <p style="text-align: end; font-weight: bolder; color: orange;">Until November.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id="preschool-program" class="py-5">
+  <div class="container">
+    <div class="row align-items-stretch"> <!-- Aligns both columns to stretch equally -->
+      <!-- Card with Image -->
+      <div class="col-md-6">
+        <div class="card border-0 h-100"> <!-- Apply h-100 to make the card fill the height -->
+          <img src="{% static 'images/maxresdefault.jpg.webp' %}" alt="Child Image" class="img-fluid rounded h-100">
+        </div>
+      </div>
+
+      <!-- Card with Content -->
+      <div class="col-md-6">
+        <div class="card p-4" style="background-color: #f7f9fc; border-radius: 15px; height: 100%;"> <!-- Apply h-100 to this card as well -->
+          <h1 class="mb-4">WELCOMING CHILDREN AS YOUNG AS 24 MONTHS</h1>
+          <p>For kids starting from 24 months, we at Little Scholars Daycare offer a journey brimming with exploration. Features of our Preschool for 2-6-year-olds include:</p>
+          <ul style="list-style-type: none; padding: 0;">
+            <li>
+              <i class="fas fa-puzzle-piece"></i> <strong>Diverse Learning:</strong> A dual-language curriculum covering 10 domains.
+            </li>
+            <li>
+              <i class="fas fa-users"></i> <strong>Paced Exploration:</strong> Ensuring a joyful learning experience tailored to each child.
+            </li>
+            <li>
+              <i class="fas fa-child"></i> <strong>Physical & Cognitive Growth:</strong> Engaging games and activities for strength, balance, and brain development.
+            </li>
+            <li>
+              <i class="far fa-heart"></i> <strong>Personal Touch:</strong> Caregivers fostering trust through individual attention.
+            </li>
+            <li>
+              <i class="fas fa-seedling"></i> <strong>Inclusive Foundation:</strong> With Frog Street’s curriculum, we cater to all learners.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="gallery" class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">Our Gallery</h1>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'images/gallery-2-image-1-540x445@2x.jpg.webp' %}" alt="Gallery Image 1" class="card-img-top rounded">
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'images/gallery-2-image-2-540x445@2x.jpg.webp' %}" alt="Gallery Image 2" class="card-img-top rounded">
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'images/gallery-2-image-3-540x445@2x.jpg.webp' %}" alt="Gallery Image 3" class="card-img-top rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Empower Little Researchers Section -->
+<section id="empower-researchers" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">HOW WE EMPOWER OUR LITTLE INTELLECTUALS</h2>
+        <div class="row">
+
+            <!-- Card 1: Nurturing Unique Path -->
+            <div class="col-md-4 mb-4">
+                <div class="card p-4" style="background-color: #e886db; border-radius: 15px; height: 100%;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Nurturing Unique Path</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="bi bi-stars text-primary me-2"></i>
+                                <strong>Personalized Learning:</strong> Tailoring programs to celebrate every child's unique abilities.
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-puzzle text-primary me-2"></i>
+                                <strong>Exploration & Creativity:</strong> Inspiring curiosity through hands-on activities.
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-heart text-primary me-2"></i>
+                                <strong>Confidence Building:</strong> Encouraging self-expression and trust in a supportive setting.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Transitioning Period -->
+            <div class="col-md-4 mb-4">
+                <div class="card p-4" style="background-color: #90be6d; border-radius: 15px; height: 100%;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Transitioning Period</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="bi bi-hand-thumbs-up text-primary me-2"></i>
+                                <strong>Guided Routines:</strong> Smoothly adapting children to new learning environments.
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-activity text-primary me-2"></i>
+                                <strong>Interactive Play:</strong> Fostering comfort through fun and engaging activities.
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-smile text-primary me-2"></i>
+                                <strong>Emotional Support:</strong> Building confidence during transitions with care and consistency.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Mastering Math -->
+            <div class="col-md-4 mb-4">
+                <div class="card p-4" style="background-color: #c29cf3; border-radius: 15px; height: 100%;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Mastering Math</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="bi bi-calculator text-primary me-2"></i>
+                                <strong>Foundational Skills:</strong> Introducing numbers through games and activities.
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-brush text-primary me-2"></i>
+                                <strong>Problem-Solving:</strong> Encouraging logical thinking with creative challenges.
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-lightbulb text-primary me-2"></i>
+                                <strong>Confidence Building:</strong> Helping children enjoy and succeed in math from an early age.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<div class="container my-5">
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card shadow" style="height: 100%;">
+        <img src="{% static 'images/acc-13.jpg.webp' %}" class="card-img-top" alt="Parent Partnership">
+        <div class="card-body">
+          <h1 class="card-title h4 text-center">Dual-languages Learning</h1>
+          <p class="card-text text-center">
+
+            At Little Dreamers, we cultivate an inclusive environment where every child is treated equally, embracing diversity and fostering respect for one another in a harmonious, supportive setting.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="{% static 'images/acc-14.jpg.webp' %}" class="card-img-top" alt="Early Enrollment">
+        <div class="card-body">
+          <h1 class="card-title h4 text-center">Physical Development Fun</h1>
+          <p class="card-text text-center">
+            At Little Dreamers, we foster creativity and development through stimulating activities, including hands-on play, sensory exploration, and interactive learning. These activities are designed to promote intellectual curiosity, cognitive development, and social interaction, ensuring a well-rounded experience for every child.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card shadow" style="height: 100%;">
+        <img src="{% static 'images/gallery-5-image-1-540x345@2x.jpg.webp' %}" class="card-img-top" alt="Flexible Scheduling">
+        <div class="card-body">
+          <h1 class="card-title h4 text-center">Social Emotional Enrichment</h1>
+          <p class="card-text text-center">
+            Hygiene and security are our top priorities. We maintain a clean environment and follow strict hygiene protocols. Our facilities are secure, with constant supervision to ensure your child’s safety and well-being.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="operation-time" class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">Operation Time & Conditions</h1>
+    <div class="row g-4">
+      <!-- Card 1: Schedule -->
+      <div class="col-md-3">
+        <div class="card border-0 shadow" style="background-color: #FF6347; height: 100%;">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-calendar-week" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Schedule</h4>
+            </div>
+            <p class="card-text">Monday – Friday<br>8:00 am – 6:00 pm</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2: Nutrition -->
+      <div class="col-md-3">
+        <div class="card border-0 shadow" style="background-color: #76D7C4;  height: 100%;">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-basket" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Nutrition</h4>
+            </div>
+            <p class="card-text">Parents need to supply breast milk or formula, as well as baby puree, to ensure their child’s individual dietary needs are met.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3: Groups -->
+      <div class="col-md-3">
+        <div class="card border-0 shadow" style="background-color: #FFCE00;  height: 100%;">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-person-check" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Groups</h4>
+            </div>
+            <p class="card-text">We prioritize comfort and safety by placing children in groups based on their age.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4: Classrooms -->
+      <div class="col-md-3">
+        <div class="card border-0 shadow" style="background-color: #3498DB;  height: 100%;">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-house-door" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Classrooms</h4>
+            </div>
+            <p class="card-text">Our classrooms are not only equipped with age-appropriate learning materials and toys but are also meticulously maintained to ensure hygiene and safety.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Infant Program Section -->
+<section id="infant-program" class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Left Card: Location Details -->
+            <div class="col-md-6">
+                <div class="card p-4" style="background-color: #f9f9f9; border-radius: 15px;">
+                    <h1>Preschool (2-6 y.o.) – Daycare nearby</h1>
+                    <p>We have 2 locations for our Preschool (2-6 y.o.):</p>
+                    <i class="bi bi-geo-alt-fill text-primary" style="font-size: 2rem;" title="View Location"></i>
+                    <p class="mt-3">Explore the location on the map to the right.</p>
+                </div>
+            </div>
+            <!-- Right Side: Google Map -->
+            <div class="col-md-6">
+                <div style="height: 300px; width: 100%; border-radius: 10px; overflow: hidden;">
+                    <div id="map" style="height: 100%; width: 100%;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.746985216337!2d36.87898237350098!3d-1.3278024356698355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f13040cca3027%3A0xd710b904557488db!2sThe%20Imaara%20Shopping%20Mall!5e0!3m2!1sen!2ske!4v1733311946825!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="by-age-one" class="py-5">
+    <div class="container">
+        <h1 class="text-center mb-4">By the Age of 3</h1>
+        <p class="text-center mb-5">
+            At Three, your child is becoming more aware of their surroundings and shows increased interaction. Here’s what most two-year-olds typically accomplish after our program.
+
+                    </p>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card text-white p-4" style="background-color: #ffadad; border-radius: 15px; height: 100%;">
+                    <div class="card-number-icon">
+                        <h2 class="mb-3" style="font-size: 3rem;">1</h2>
+                    </div>
+                    <h3 style="color:#1a1d20"><strong>Confidence counting</strong></h3>
+                    <p>Toddlers develop essential motor skills through activities like crawling, walking, and climbing. These skills are fundamental for independence and building coordination, allowing them to engage with their environment and learn more effectively.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card text-white p-4" style="background-color: #ffd6a5; border-radius: 15px; height: 100%;">
+                    <div class="card-number-icon">
+                        <h2 class="mb-3" style="font-size: 3rem;">2</h2>
+                    </div>
+                    <h3 style="color:#1a1d20"><strong>Expressive Language Skills</strong></h3>
+                    <p>At this stage, children begin to understand the world around them. Through play, exploration, and problem-solving activities, toddlers enhance their memory, critical thinking, and ability to focus. Engaging in activities that stimulate the mind helps boost cognitive skills that will support future learning.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card text-white p-4" style="background-color: #d68910; border-radius: 15px; height: 100%;">
+                    <div class="card-number-icon">
+                        <h2 class="mb-3" style="font-size: 3rem;">3</h2>
+                    </div>
+                    <h3 style="color:#1a1d20"><strong>Language Progression</strong></h3>
+                    <p>Toddlers are in the early stages of language development. Listening to stories, interacting with caregivers, and mimicking sounds help to expand their vocabulary. Social interactions also promote language skills as they begin to express needs and thoughts.</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card text-white p-4" style="background-color: #1e8449; border-radius: 15px; height: 100%;">
+                    <div class="card-number-icon">
+                        <h2 class="mb-3" style="font-size: 3rem;">4</h2>
+                    </div>
+                    <h3 style="color:#1a1d20"><strong>Exploring Self-Expression</strong></h3>
+                    <p>Through art, music, and movement, toddlers explore different ways of expressing themselves. These activities encourage creativity and allow children to communicate their emotions and ideas, enhancing their sense of identity and individuality.</p>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card text-white p-4" style="background-color: #9bf6ff; border-radius: 15px; height: 100%;">
+                    <div class="card-number-icon">
+                        <h2 class="mb-3" style="font-size: 3rem;">5</h2>
+                    </div>
+                    <h3 style="color:#1a1d20"><strong>Social Engagement</strong></h3>
+                    <p>Learning to interact with others is a key milestone during toddlerhood. Engaging in group activities, taking turns, and learning empathy helps toddlers build social skills. This foundation prepares them for future relationships and teamwork.</p>
+
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-4">
+                <div class="card text-white p-4" style="background-color: #a0c4ff; border-radius: 15px; height: 100%;">
+                    <div class="card-number-icon">
+                        <h2 class="mb-3" style="font-size: 3rem;">6</h2>
+                    </div>
+                    <h3 style="color:#1a1d20"><strong>Building Self-Sufficiency</strong></h3>
+                    <p>Encouraging toddlers to do tasks independently, such as feeding themselves, dressing, or tidying up, fosters self-confidence and responsibility. These activities teach them the importance of self-care and the skills necessary to manage daily tasks.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="faq" class="py-5">
+    <div class="container">
+        <h1 class="text-center mb-5">Frequently Asked Questions</h1>
+        <div class="accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1Heading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                       Is it beneficial for 2-year-olds to attend preschool?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, preschool helps develop social, emotional, and cognitive skills through structured play.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                      What kind of learning should a 2-year-old engage in?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        At 2, learning through play, motor skill activities, language development, and social interaction is key.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                        Does preschool attendance improve later school performance?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, quality preschool can positively impact later academic and social skills.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq4Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                        What safety measures are in place at your preschool for a 2-year-olf?
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Preschools use secure access, low teacher-to-child ratios, age-appropriate equipment, and staff trained in first aid.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq5Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                        How can i stay informed about my 2-year-old's progress at preschool?
+                    </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Updates can be provided through daily reports, parent-teacher meetings, and communication apps.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq6Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                        Do you work closely with parents?
+                    </button>
+                </h2>
+                <div id="faq6" class="accordion-collapse collapse" aria-labelledby="faq6Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Absolutely! We maintain open communication with parents, provide daily updates, and collaborate on each child’s care and developmental goals.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq7Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                        What is the teacher-to-child ratio at your preschool?
+                    </button>
+                </h2>
+                <div id="faq7" class="accordion-collapse collapse" aria-labelledby="faq7Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        A lower teacher-to-child ratio ensures more individualized attention, helping with social, emotional, and academic growth. Typically, preschool ratios range from 1:3 to 1:10, depending on the age group.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

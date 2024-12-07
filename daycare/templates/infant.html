@@ -1,0 +1,468 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<section id="infant-program" class="py-5">
+  <div class="card p-4" style="background-color: #f0f8ff; border-radius: 25px; margin-top: 50px; margin-left: 45px; margin-right: 45px;">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="mb-4">Infant Program (3-12 months)</h1>
+        <p>We are the preferred choice for discerning parents seeking “infant daycare near me” for children aged 3-12 months, ensuring your precious ones receive exceptional care from day one.</p>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+            <strong>Expert Loving Care:</strong> Our passionate and qualified educators and personnel deliver loving care to your children from their very first days, setting the stage for lifelong learning.
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+            <strong>Enhanced Play Areas:</strong> Specially designed spaces encourage crawling and walking, promoting the development of essential motor skills.
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+            <strong>Small Groups:</strong> With up to eight kids, we foster socialization and communication in a supportive environment, ensuring each child receives individual attention.
+          </li>
+        </ul>
+        <button class="btn btn-primary mt-3" onclick="window.location.href='{% url 'enrollment' %}'">
+    Apply to Program
+</button>
+
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'images/infant.png' %}" alt="Infant Program" class="img-fluid rounded">
+      </div>
+      <div class="mt-4 p-3" style="background-color: #e6f7ff; border-radius: 10px;">
+      <h4>Enrollment Period</h4>
+      <p style="font-weight: bolder; color: orange;">Always open for enrollment.</p>
+      <h4 style="text-align: end;">Duration of the Academic Year:</h4>
+      <p style="text-align: end; font-weight: bolder; color: orange;">Until the child turns 1 year old.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id="infant-program-welcome" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Card with Image -->
+      <div class="col-md-6">
+        <div class="card border-0" style="height: 400px;">
+          <img src="{% static 'images/infant 1.webp' %}" alt="Child Image" class="img-fluid rounded">
+        </div>
+      </div>
+
+      <!-- Card with Content -->
+      <div class="col-md-6">
+        <div class="card p-4" style="background-color: #f7f9fc; border-radius: 15px;">
+          <h1 class="mb-4">WELCOMING CHILDREN AS YOUNG AS 3 MONTHS</h1>
+          <p>
+            At Little Dreamers, our Infant Program is more than just daycare.
+            It’s a sanctuary where infants develop essential skills, explore the world around them, and begin their lifelong learning journey.
+            With us, rest assured your infant is in loving, professional hands, evolving in a warm, educational environment,
+            preparing not just for school, but for life.
+          </p>
+          <p>
+            Whether you’re searching for an infant daycare in Nairobi or aiming to find a comprehensive Infant Program,
+            Little Dreamers is the right place to start your child’s educational journey.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="gallery" class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">Our Gallery</h1>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'images/infant.png' %}" alt="Gallery Image 1" class="card-img-top rounded">
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'images/DSC_5500-scaled-1-540x445@2x.jpg.webp' %}" alt="Gallery Image 2" class="card-img-top rounded">
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'images/OP1_0208-scaled-1-540x445@2x.jpg.webp' %}" alt="Gallery Image 3" class="card-img-top rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="empower-researchers" class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">How We Empower Our Little Researchers</h1>
+    <div class="row g-4">
+      <!-- Card 1: Interactive Play -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow" style="background-color: #FFCE00; height: 100%">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-gift" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Interactive Play</h4>
+            </div>
+            <p class="card-text">Our engaging activities maximize knowledge absorption, sparking curiosity and learning.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2: Sensory Exploration -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow" style="background-color: #76D7C4;">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-droplet" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Sensory Exploration</h4>
+            </div>
+            <p class="card-text">Our program immerses infants in sensory-rich environments, promoting intellectual and emotional development.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3: Musical Moments -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow" style="background-color: #FF6347;">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-music-note-beamed" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Musical Moments</h4>
+            </div>
+            <p class="card-text">Singing sessions enhance cognitive development, enriching your child’s mind through melody and rhythm.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4: Creative Encounters -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow" style="background-color: #F39C12;">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-palette" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Creative Encounters</h4>
+            </div>
+            <p class="card-text">Various innovative activities and playful learning keep infants intrigued and motivated throughout the full day.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5: Harmonious Environment -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow" style="background-color: #3498DB; height: 100%;">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-house-door" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Harmonious Environment</h4>
+            </div>
+            <p class="card-text">Utilizing soft and cheerful colors to create a pleasant and stimulating atmosphere.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6: Balanced Daily Routine -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow" style="background-color: #9B59B6; height: 100%;">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-calendar-check" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Balanced Daily Routine</h4>
+            </div>
+            <p class="card-text">Combining adequate rest and structured play to ensure a harmonious growth trajectory.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container my-5">
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card shadow" style="height: 100%;">
+        <img src="{% static 'images/parent.webp' %}" class="card-img-top" alt="Parent Partnership">
+        <div class="card-body">
+          <h1 class="card-title h4 text-center">Parent Partnership</h1>
+          <p class="card-text text-center">
+            At Little Dreamers, we believe in a collaborative approach where parents and educators work together to support the child's growth and development.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="{% static 'images/DSC_5500-scaled-1-540x445@2x.jpg.webp' %}" class="card-img-top" alt="Early Enrollment">
+        <div class="card-body">
+          <h1 class="card-title h4 text-center">Early Enrollment</h1>
+          <p class="card-text text-center">
+            Secure your child’s place in our nurturing environment early, ensuring a smooth transition to an engaging and stimulating program.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card shadow" style="height: 100%;">
+        <img src="{% static 'images/ls-5.jpg.webp' %}" class="card-img-top" alt="Flexible Scheduling">
+        <div class="card-body">
+          <h1 class="card-title h4 text-center">Flexible Scheduling and Payment</h1>
+          <p class="card-text text-center">
+            Our program is designed to accommodate diverse family needs with flexible schedules and payment options that work for you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="operation-time" class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">Operation Time & Conditions</h1>
+    <div class="row g-4">
+      <!-- Card 1: Schedule -->
+      <div class="col-md-3">
+        <div class="card border-0 shadow" style="background-color: #FF6347; height: 100%;">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-calendar-week" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Schedule</h4>
+            </div>
+            <p class="card-text">Monday – Friday<br>8:00 am – 6:00 pm</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2: Nutrition -->
+      <div class="col-md-3">
+        <div class="card border-0 shadow" style="background-color: #76D7C4;  height: 100%;">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-basket" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Nutrition</h4>
+            </div>
+            <p class="card-text">Parents need to supply breast milk or formula, as well as baby puree, to ensure their child’s individual dietary needs are met.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3: Groups -->
+      <div class="col-md-3">
+        <div class="card border-0 shadow" style="background-color: #FFCE00;  height: 100%;">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-person-check" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Groups</h4>
+            </div>
+            <p class="card-text">We prioritize comfort and safety by placing children in groups based on their age.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4: Classrooms -->
+      <div class="col-md-3">
+        <div class="card border-0 shadow" style="background-color: #3498DB;  height: 100%;">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-house-door" style="font-size: 30px; margin-right: 10px;"></i>
+              <h4 class="card-title">Classrooms</h4>
+            </div>
+            <p class="card-text">Our classrooms are not only equipped with age-appropriate learning materials and toys but are also meticulously maintained to ensure hygiene and safety.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Infant Program Section -->
+<section id="infant-program" class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Left Card: Location Details -->
+            <div class="col-md-6">
+                <div class="card p-4" style="background-color: #f9f9f9; border-radius: 15px;">
+                    <h1>Infant (0-1 y.o.) – Daycare Nearby</h1>
+                    <p>We have 1 location for our Infant Program (0-1 y.o.):</p>
+                    <i class="bi bi-geo-alt-fill text-primary" style="font-size: 2rem;" title="View Location"></i>
+                    <p class="mt-3">Explore the location on the map to the right.</p>
+                </div>
+            </div>
+            <!-- Right Side: Google Map -->
+            <div class="col-md-6">
+                <div style="height: 300px; width: 100%; border-radius: 10px; overflow: hidden;">
+                    <div id="map" style="height: 100%; width: 100%;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.746985216337!2d36.87898237350098!3d-1.3278024356698355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f13040cca3027%3A0xd710b904557488db!2sThe%20Imaara%20Shopping%20Mall!5e0!3m2!1sen!2ske!4v1733311946825!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="by-age-one" class="py-5">
+    <div class="container">
+        <h1 class="text-center mb-4">By the Age of 1</h1>
+        <p class="text-center mb-5">
+            By the age of 1, at Little Scholars, children are nurtured to reach pivotal developmental milestones and acquire a range of skills. Here’s what your child will learn to do in our enriching environment:
+        </p>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card text-white p-4" style="background-color: #ffadad; border-radius: 15px;">
+                    <div class="card-number-icon">
+                        <h2 class="mb-3" style="font-size: 3rem;">1</h2>
+                    </div>
+                    <h3 style="color:#1a1d20"><strong>Control Movement</strong></h3>
+                    <p>Children learn to control their body movements, developing fine and gross motor skills essential for physical activities.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card text-white p-4" style="background-color: #ffd6a5; border-radius: 15px;">
+                    <div class="card-number-icon">
+                        <h2 class="mb-3" style="font-size: 3rem;">2</h2>
+                    </div>
+                    <h3 style="color:#1a1d20"><strong>Crawl</strong></h3>
+                    <p>Crawling encourages strength development, spatial awareness, and coordination, setting the stage for walking.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card text-white p-4" style="background-color: #d68910; border-radius: 15px;">
+                    <div class="card-number-icon">
+                        <h2 class="mb-3" style="font-size: 3rem;">3</h2>
+                    </div>
+                    <h3 style="color:#1a1d20"><strong>Walk with Support</strong></h3>
+                    <p>With guided support, children take their first steps, boosting confidence and mobility.</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card text-white p-4" style="background-color: #1e8449; border-radius: 15px;">
+                    <div class="card-number-icon">
+                        <h2 class="mb-3" style="font-size: 3rem;">4</h2>
+                    </div>
+                    <h3 style="color:#1a1d20"><strong>Transition Between Positions</strong></h3>
+                    <p>Mastering transitions like sitting, standing, and lying down enhances balance and agility.</p>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card text-white p-4" style="background-color: #9bf6ff; border-radius: 15px;">
+                    <div class="card-number-icon">
+                        <h2 class="mb-3" style="font-size: 3rem;">5</h2>
+                    </div>
+                    <h3 style="color:#1a1d20"><strong>Distinguish Between Toys</strong></h3>
+                    <p>Children learn to differentiate between objects, fostering cognitive and sensory development.</p>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-4">
+                <div class="card text-white p-4" style="background-color: #a0c4ff; border-radius: 15px;">
+                    <div class="card-number-icon">
+                        <h2 class="mb-3" style="font-size: 3rem;">6</h2>
+                    </div>
+                    <h3 style="color:#1a1d20"><strong>Respond to Their Names</strong></h3>
+                    <p>Recognizing and responding to their names strengthens social and emotional connections.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="faq" class="py-5">
+    <div class="container">
+        <h1 class="text-center mb-5">Frequently Asked Questions</h1>
+        <div class="accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1Heading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                        What kind of care can my child expect?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Your child will receive loving, attentive, and expert care from qualified educators. We focus on creating a nurturing environment to support physical, emotional, and cognitive development.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                        What does the infant daily schedule look like?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Our daily schedule includes playtime, sensory activities, naps, feeding, and one-on-one interaction to ensure a balanced and stimulating experience for your infant.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                        How do you manage sleeping and relaxing time for infants?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We follow each child's individual sleep routine and provide a calm, soothing environment with dedicated sleeping areas to ensure restful naps.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq4Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                        Are meals included?
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Parents provide breast milk, formula, or baby puree for their infants. We ensure that each child's dietary needs are met while they are in our care.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq5Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                        Is there a special environment created for the infants?
+                    </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, our infant spaces are designed with soft colors, age-appropriate toys, and sensory elements to provide a stimulating and comfortable environment for exploration and growth.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq6Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                        Do you work closely with parents?
+                    </button>
+                </h2>
+                <div id="faq6" class="accordion-collapse collapse" aria-labelledby="faq6Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Absolutely! We maintain open communication with parents, provide daily updates, and collaborate on each child’s care and developmental goals.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq7Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                        What will my child be able to do by their first birthday in this program?
+                    </button>
+                </h2>
+                <div id="faq7" class="accordion-collapse collapse" aria-labelledby="faq7Heading" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        By their first birthday, children in our program will have developed skills such as controlled movement, crawling, transitioning between positions, and responding to their names.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
