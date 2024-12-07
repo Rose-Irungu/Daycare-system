@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4">Approved Babysitters</h1>
+    <div class="row">
+        {% for babysitter in babysitters %}
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                {% if babysitter.profile_picture %}
+                <img src="{{ babysitter.profile_picture.url }}" class="card-img-top" alt="{{ babysitter.name }}">
+                {% else %}
+                <img src="{% static 'images/default-profile.png' %}" class="card-img-top" alt="Default Profile">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ babysitter.name }}</h5>
+                    <p class="card-text">
+                        <strong>Email:</strong> {{ babysitter.email }}<br>
+                        <strong>Phone:</strong> {{ babysitter.phone }}<br>
+                        <strong>Experience:</strong> {{ babysitter.experience }} years
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,168 @@
+.fa-twitter {
+        color: #1DA1F2; /* Twitter Blue */
+        transition: color 0.3s ease;
+    }
+    .fa-twitter:hover {
+        color: #0d95e8; /* Slightly darker blue on hover */
+    }
+
+.about {
+    background-color: #f9f9f9; /* Light background for better contrast */
+    padding: 3rem 0; /* Add padding for spacing */
+    border-radius: 10px; /* Slightly round the corners */
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    color: #4CAF50; /* Green theme color */
+    font-weight: bold;
+    margin-bottom: 1.5rem; /* Space below the title */
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555; /* Muted text color */
+}
+
+.about h3 {
+    color: #FF5722; /* Orange color for headings */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.about .row div {
+    margin-bottom: 2rem; /* Space between mission and vision sections on smaller screens */
+}
+
+.about .container {
+    max-width: 900px; /* Center content with a max width */
+    margin: auto; /* Center the container */
+    text-align: left; /* Align text to the left */
+}
+.contact {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 3rem 0;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    color: #4CAF50; /* Green theme color */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    color: #555; /* Muted text for description */
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact ul {
+    font-size: 1.1rem;
+    color: #333;
+    padding-left: 0; /* Remove default list padding */
+    list-style: none; /* Remove bullet points */
+}
+
+.contact ul li {
+    margin-bottom: 0.5rem; /* Space between list items */
+}
+
+.contact ul li strong {
+    color: #FF5722; /* Highlight labels */
+}
+
+.contact .form-control {
+    border-radius: 5px; /* Rounded input fields */
+    border: 1px solid #ccc; /* Soft border */
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.contact .btn {
+    background-color: #4CAF50; /* Button color */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact .btn:hover {
+    background-color: #45A049; /* Darker green on hover */
+}
+
+.contact .form-group {
+    margin-bottom: 1.5rem;
+}
+.services {
+    background-color: #f9f9f9;
+}
+
+.services h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.services p {
+    font-size: 1.1rem;
+}
+
+.service-box {
+    background: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-box i {
+    color: #4CAF50;
+}
+
+.service-box h4 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.service-box p {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.card {
+    border-radius: 25px;  /* Adjust the roundness */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the shadow */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-label {
+    font-weight: bold;
+    color: #555;
+}
+.form-control, .form-select {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
